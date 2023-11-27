@@ -6,7 +6,7 @@ The following are the general clarifications for the reviewers' comments. We als
 
 ### **1. Novelty and contribution on time series imputation side** 
 
-Though the factorization-based imputation methods are widely appled in general machine learning, like Bayesian PCA[1] and tensor decomposition[2], and matrix factorization, they are rarely applied in time series imputation. In our knowledge, the most recent work to apply this for time series imputation is **TIDER**[3][Liu et al., ICLR 2022], which is a matrix factorization-based formulation. The gap there is because:
+Though the factorization-based imputation methods are widely appled in general machine learning, like Bayesian PCA and tensor decomposition, and matrix factorization, they are rarely applied in time series imputation. In our knowledge, the most recent work to apply this for time series imputation is **TIDER**[Liu et al., ICLR 2022], which is a matrix factorization-based formulation. The gap there is because:
 
 - Tranditioonal time series models cares more on capturing the temporal dependency, instead of the **cross-channel dependency** and **low-rank structure**. 
   
