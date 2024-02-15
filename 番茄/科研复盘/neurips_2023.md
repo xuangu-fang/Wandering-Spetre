@@ -23,7 +23,7 @@ github:https://github.com/FlyingWorkshop/dynadojo/blob/main/README.md
 
 7. energy-based tensor / multi-interaction tensor: two paper from RIKEN (add advanced entropy regularization?)
 
-8. surface/physical field reconstruction ?
+8. surface/physical field reconstruction - 参考 Nerf, 3D Gaussian Splatting 的工作，融入到tensor-based model中
    
 9. S4: structure state space model for sequential data + Mamba (S4 + selective module)
 
