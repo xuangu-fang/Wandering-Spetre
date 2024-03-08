@@ -9,6 +9,7 @@ https://zhuanlan.zhihu.com/p/681286081 -- “星尘传感器与念动浮游炮�
 
 - AI+全链优化数据集: 化工产业的软测量问题和数据集介绍 - 一块钱买中巴的文章 - 知乎
 https://zhuanlan.zhihu.com/p/204921360
+https://depts.washington.edu/control/LARRY/TE/download.html#Updated
 
 1. AI + society
 
