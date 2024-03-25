@@ -14,7 +14,7 @@ We thank reviewer to point out this, and we will add this explanation to the rev
 
 
 >C2: "How would your model perform if you used different parameters for these dimensions($D_r, D_s$)?"
-<!-- highlight add exp -->
+
 R2: Good point! First, we actually show the sensitivity of the model to the latent space dimension in the experiments (Figure 2 (d)) by varing the latent space dimension ($D_r+D_s$) from 5 to 60. To further investigate the impact of the latent space dimension on the model performance, **we conduct extra experiments** on guangzhou-traffic dataset(observed ratio = $70\%$) by varying the latent space dimension and report the results in the follwoing tables:
 
 ---
@@ -38,7 +38,7 @@ R1: Good point! We do agree more experiments and analysis on the latent space di
 
 
 > C2:  "why to conduct assumptions with Gassian prior and Gamma prior in the function (9) and (12), rather than other distributions?"
-<!-- check shandian's respoanse for BCTT -->
+
 R2: Good question! We choose Gaussian and Gamma as priors and approximated distributions for the following reasons:
 
 - for equation (9): The Gaussian prior is a common choice for the latent factors in GP models. It is consistent with the Gaussian data likelihood, and increases the model's robustness and interpretability. The Gamma distribution is most commonly used prior for the inverse noise variance in GP regression. It is a conjugate prior to the Gaussian likelihood and has a closed-form posterior, which simplifies the inference process.
@@ -95,12 +95,12 @@ We will add this explanation to the revised manuscript to clarify the model's ca
 
 
 > C3: "theoretical analysis like boundary analysis to show how accurate this method can achieve by probabilistic interpolation method 
-<!-- Linear weight + State-Space -->
+
 
 R3: Thanks for the suggestion! As the BayOTIDE can give the closed-form predictive distributions of factors $V(t^*)$ and weights $U$ at arbitrary time points, the imputation result can be seen as randon variable $V^{T}(t^*)U$, which is the dot prodct of the two multi-var Gaussian distributions with non-identical covariance matrices. There is no explict form for such distribution, but we can explore the distribution's properties, like empirical variance and higher-order moments by Monte Carlo simulation., to analyze the imputation accuracy and boundary analysis. 
 
 > C4: how to simulate the online setting with offline datasets?
-> > > <!-- just state -->
+
 
 R4: We feed the observed data into the model in a sequential manner, following the order of the initial timestamps. The model updates the posterior distribution of the latent factors and weights at each step. At preset steps, we evaluate the model's performance by imputating all missing values in series with current weight and factors, and calculate the imputation accuracy. This procedure is shown in Figure 2(a) and line 366-383 in main text. We will add detailed explanation to the revised manuscript to clarify the online setting.
 
