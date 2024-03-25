@@ -5,8 +5,8 @@ We thank reviewer for the careful review and constructive suggestion—especiall
 <!-- 2 points, on the seasonal factors, is efficent, on the trend factor, Matern is suffient and resoanable, other kernel is hard become state-space cloased form -->
 R1:  Good point!  In BayOTIDE, we model two main functional factors: seasonal and trend components. For the seasonal factor, the choice of the periodic kernel was quite natural and straightforward as we required a function that could model periodic signals effectively.
 
-Regarding the trend factor, indeed, several kernels could have been considered to capture cpmplex patterns in the latent space. We opted for the Matérn kernel for two reasons: 
-- **Flexibility and Strength**: Matérn kernel allows for additional control over the function's smoothness. The sampled functions from the Matérn kernel are $\nu$ times differentiable in the mean-square sense, providing the capability to adjust the function's behavior according to the data. For example, with different values of  $\nu$, the Matérn kernel can model functions ranging from non-differentiable to infinitely differentiable, offering more versatility than the commonly used square-exponential (SE) kernel. The SE kernel, while popular, restricts sampled functions to be infinitely differentiable, which can be overly restrictive for certain datasets. Other often-used kernels, such as the linear kernels or the expenential kernels, is either too simple or a special case of the Matérn kernel. We  evaluate how differnt smoothness of kernels fit the real-world data in Figure (d)-(f).
+Regarding the trend factor, indeed, several kernels, like square-exponential (SE) kernel, could have been considered to capture cpmplex patterns in the latent space. We opted for the Matérn kernel for two reasons: 
+- **Flexibility and Strength**: Matérn kernel allows for additional control over the function's smoothness with parameters $\nu$ (line 127-128, left column). The sampled functions from the Matérn kernel are $\nu$ times differentiable in the mean-square sense, providing the capability to adjust the function's behavior according to the data. For example, with different values of  $\nu$, the Matérn kernel can model functions ranging from non-differentiable to infinitely differentiable, offering more versatility than the commonly used SE kernel. The SE kernel, while popular, restricts sampled functions to be infinitely differentiable, which can be overly restrictive for certain datasets. Other often-used kernels, such as the linear kernels or the expenential kernels, is either too simple or a special case of the Matérn kernel. We  evaluate how differnt smoothness of kernels fit the real-world data in Figure (d)-(f).
 
 - **Analytical Tractability with State-Space GP**: As the stationary kernel, Matérn kernel  has a concise and closed-form state-space representation (as detailed in Appendix 1, equations 25-26), enabling us to derive efficient online inference algorithms. In contrast, while some non-stationary kernels may offer more powerful modeling capabilities, they do not easily lend themselves to a state-space model representation, complicating subsequent inference processes.
 
@@ -15,9 +15,7 @@ We thank reviewer to point out this, and we will add this explanation to the rev
 
 >C2: "How would your model perform if you used different parameters for these dimensions($D_r, D_s$)?"
 <!-- highlight add exp -->
-R2: Good point! First, we actually show the sensitivity of the model to the latent space dimension in the experiments (Figure 2 (d)) by varing the latent space dimension ($D_r+D_s$) from 5 to 60. 
-
-To further investigate the impact of the latent space dimension on the model performance, we will conduct extra experiments on guangzhou-traffic dataset(observed ratio = $70\%$) by varying the latent space dimension and report the results in the follwoing tables:
+R2: Good point! First, we actually show the sensitivity of the model to the latent space dimension in the experiments (Figure 2 (d)) by varing the latent space dimension ($D_r+D_s$) from 5 to 60. To further investigate the impact of the latent space dimension on the model performance, **we conduct extra experiments** on guangzhou-traffic dataset(observed ratio = $70\%$) by varying the latent space dimension and report the results in the follwoing tables:
 
 ---
 |  Test CRPC   | $D_r$ = 5 |   $D_r$ = 10 |     $D_r$ = 20 |    $D_r$ = 30 |  $D_r$ = 40 |      
@@ -27,7 +25,7 @@ To further investigate the impact of the latent space dimension on the model per
 | $D_s= 10$    |   0.066    | 0.063  | 0.058   | 0.053   |0.053 |
 | $D_s= 20$     |   0.081    | 0.074   | 0.065   | 0.059   |0.058 |
 
-We can found that the increasing the latent space dimension, especially the trend factor dimension, can improve the model performance. However, the improvement is not linear and the model may suffer from overfitting when the latent space dimension is too large. Too high seasonal factor dimension may also lead to overfitting and degrade the model performance. We will add this analysis to the revised manuscript to highlight the impact of the latent space dimension on the model performance.
+We can found that the increasing the latent space dimension, especially the trend factor dimension ($D_r$), can improve the model performance. However, the improvement is not linear and the model may suffer from overfitting when the latent space dimension is too large. Too high seasonal factor dimension ($D_s$) may also lead to overfitting and degrade the model performance. We will add this analysis to the revised manuscript to highlight the impact of the latent space dimension on the model performance.
 
 # for reviewer  TmRT (6/3)
 
@@ -36,7 +34,7 @@ We thank reviewer for the careful review and constructive suggestion
 > C1:"The numbers of trend factors and seasonal factors are important parameters, but the analysis is insufficient. More experiments and analysis might be better."
 <!-- highlight and add exp -->
 
-R1: Good point! We do agree more experiments and analysis on the latent space dimension are necessary to better understand the model's behavior. We have conducted sensitivity analysis on the latent space dimension in the experiments (Figure 2 (d)) by varying the latent space dimension ($D_r+D_s$) from 5 to 60, and add extra experiments on guangzhou-traffic dataset(observed ratio = $70\%$) by varying the latent space dimension and report the results. Please refer to the response **R2** to **reviewer y2cT** for the detailed results and discussion. 
+R1: Good point! We do agree more experiments and analysis on the latent space dimension are necessary to better understand the model's behavior. We have conducted sensitivity analysis on the latent space dimension in the experiments (Figure 2 (d)) by varying the latent space dimension ($D_r+D_s$) from 5 to 60, and **we add extra experiments** on guangzhou-traffic dataset(observed ratio = $70\%$) by varying the latent space dimension and report the results. **Please refer to the response R2 to reviewer y2cT for the detailed results and discussion.**
 
 
 > C2:  "why to conduct assumptions with Gassian prior and Gamma prior in the function (9) and (12), rather than other distributions?"
@@ -86,9 +84,9 @@ R1: Thanks for the suggestion and the awesome references! Causality-based method
 > 
 R2: Good question! The answar is tricky: **No but Yes** for the following reasons:
 
-- **No**: On the latent space and prior side, we applied the independent GPs priors for the trend and seasonal factors (Eq 6 and Eq 8) , assuming that they are independent. This assumption simplifies the model and inference process, making it more tractable and efficient, and results in fully independent latent factors. 
+- **No**: On the **latent space and prior side** , we applied the independent GPs priors for the trend and seasonal factors (Eq 6 and Eq 8) , assuming that they are *independent*. This assumption simplifies the model and inference process, making it more tractable and efficient, and results in *fully independent* latent factors. 
 
-- **Yes**: On the obsevation space (data) and inference side, the trend and seasonal factors are combined through the weights $u_d$ (Eq 9), which are channel-wise dependent. The weights $u_d$ are modeled as a multivariate Gaussian distribution, and its approximate posterior: $q(u^d|D_{t_n})=N(m_n^d,V_n^d)$ (line 187, below eq 11) is updated in a online manner during the inference. The learned covariance matrix $V_n^d$ can directly reflect the dependency between the functional factors. In this sense, the models enable finner-grained and channle-wise dependency between the trend and seasonal factors to better fit the data.  
+- **Yes**: On the **obsevation space (data) and inference side**, the trend and seasonal factors are combined through the weights $u_d$ (Eq 9), which are channel-wise dependent. The weights $u_d$ are modeled as a multivariate Gaussian distribution, and its approximate posterior: $q(u^d|D_{t_n})=N(m_n^d,V_n^d)$ (line 187, below eq 11) is updated in a online manner during the inference. The learned covariance matrix $V_n^d$ can directly **reflect the dependency between the functional factors**. In this sense, the models enable finner-grained and *channle-wise dependency* between the trend and seasonal factors to better fit the data.  
 
 We will add this explanation to the revised manuscript to clarify the model's capability in capturing the dependency between the trend and seasonal factors.
 
