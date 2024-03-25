@@ -29,7 +29,7 @@ We can found that the increasing the latent space dimension, especially the tren
 
 # for reviewer  TmRT (6/3)
 
-We thank reviewer for the careful review and constructive suggestion
+We thank reviewer for the careful review and constructive suggestion. We address the comments below( C: comments; R: responses): 
 
 > C1:"The numbers of trend factors and seasonal factors are important parameters, but the analysis is insufficient. More experiments and analysis might be better."
 <!-- highlight and add exp -->
@@ -73,6 +73,9 @@ R4: Thanks for pointing out the typo and we do appreaite it your detailed review
 
 
 # for reviewer xqnS (6/4):
+
+We thank reviewer for the careful review and constructive suggestion. We address the comments below( C: comments; R: responses): 
+
 
 > C1:  "authors should consider some causality-based method like"
 > > <!-- easy -->
