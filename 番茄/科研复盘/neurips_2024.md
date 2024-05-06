@@ -1,0 +1,13 @@
+-to-check-list:
+
+- Solving Inverse Problems via Diffusion Optimal Control (link)
+-  TimeBridge: Prior-Driven Time Series Generation with Diffusion Bridge
+-  Analysing Multi-Task Regression via Random Matrix Theory with Application to Time Series Forecasting
+-  Energy-Based Modelling for Discrete and Mixed Data via Heat Equations on Structured Spaces
+-  Partially Observed Trajectory Inference using Optimal Transport and a Dynamics Prior
+-  Score-Based Variational Inference for Inverse Problems
+-  SOCST: Learning Continuous Physics Simulation Overcoming Discretization from Partial Observations
+-  CoNO: Complex Neural Operator for Learning the Dynamics of Continuous Physical Systems
+-  Generalized Tensor Decomposition for Understanding Multi-Output Regression under Combinatorial Shifts
+-  Evaluating the design space of diffusion-based generative models
+-  Flat Posterior Does Matter For Bayesian Transfer Learning
