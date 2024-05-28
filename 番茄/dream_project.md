@@ -23,6 +23,7 @@ https://depts.washington.edu/control/LARRY/TE/download.html#Updated
   - 需要新的模型和算法，以及新的社会实验和社会调查方法
 
 
+<<<<<<< HEAD
 - 从 [社会组织学十讲] 中获得的的思路，或可作为 AI for social Science 的 first principle：
     - 社会学中三种分析思路/机制/视角：效率学派，新制度学派（合法性、社会环境），社会网络学派（社会关系、社会结构），其实对应了三种建模思路：内生的驱动（reaction process ）, 外部的驱动（即单位与 “宏观变量” 之间的交互约束）, 结构的驱动（沿网络传播的流）—— 而这三种建模，在ML 这边其实已经有相当丰富和成熟的工具箱了：
         - 内生的效率/随机性：最优化、GP，sampling
@@ -35,6 +36,8 @@ https://depts.washington.edu/control/LARRY/TE/download.html#Updated
         - “满意”原则 而不是 最大化原则
     - 对让机器更高效推理决策 + 更好地理解和模拟人类社会和历史，都有很多启发
 
+=======
+>>>>>>> ee6fd843517bee6a38858d0819de17fb9142a91c
 3. 逆.风暴蝴蝶 (inverse butterfly effect) - 对复杂系统的逆向预测与控制
 
 - 逆向预测与控制的基本思路与方法：
