@@ -9,7 +9,7 @@ https://zhuanlan.zhihu.com/p/681286081 -- “星尘传感器与念动浮游炮�
 
 - AI+全链优化数据集: 化工产业的软测量问题和数据集介绍 - 一块钱买中巴的文章 - 知乎
 https://zhuanlan.zhihu.com/p/204921360
-https://depts.washington.edu/control/LARRY/TE/download.html#Updated
+https://depts.washington.edu/control/LARRY/TE/download.html#Updated 
 
 2. AI + society
 
@@ -17,6 +17,7 @@ https://depts.washington.edu/control/LARRY/TE/download.html#Updated
 
   - adaptive & generative representation of real-world objects, events, and agents  
   - 工具变量与隐变量
+  - LLM fine tunning with Opion Traj. (Yun-Shiuan (Sean) Chuang)
 
 - 后AI时代的失业问题，新的职业和产业是什么？—— 人人都是调查员、研究员、社会复杂数据的贡献者和分析者，社会实验的参与者
   - 为此，需要一种新的社会契约，以保障每个人的基本生活，以及每个人的社会参与权利，以及每个人的社会实验权利
