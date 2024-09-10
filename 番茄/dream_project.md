@@ -37,7 +37,7 @@ https://depts.washington.edu/control/LARRY/TE/download.html#Updated
     - 对让机器更高效推理决策 + 更好地理解和模拟人类社会和历史，都有很多启发
 
 
-1. 逆.风暴蝴蝶 (inverse butterfly effect) - 对复杂系统的逆向预测与控制
+ 逆.风暴蝴蝶 (inverse butterfly effect) - 对复杂系统的逆向预测与控制
 
 - 逆向预测与控制的基本思路与方法：
   - deterministic 的方法，由于系统的不稳定性和对初始条件的敏感性，逆向预测是和求解基本是不可能的
