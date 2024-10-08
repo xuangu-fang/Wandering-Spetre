@@ -1,4 +1,5 @@
 
+ High-level vision-based projects
 
 1. 数字孪生，AI + industy/science
 
@@ -10,6 +11,11 @@ https://zhuanlan.zhihu.com/p/681286081 -- “星尘传感器与念动浮游炮�
 - AI+全链优化数据集: 化工产业的软测量问题和数据集介绍 - 一块钱买中巴的文章 - 知乎
 https://zhuanlan.zhihu.com/p/204921360
 https://depts.washington.edu/control/LARRY/TE/download.html#Updated 
+
+- 基于LLM+系统识别/equation discover + 控制/LLM 的集成智能系统
+  - ai驱动的 系统识别 + 控制论：
+  - https://www.zhihu.com/people/ZhuYucai1/answers
+  - https://www.zhihu.com/question/511430750
 
 2. AI + society
 
@@ -43,3 +49,12 @@ https://depts.washington.edu/control/LARRY/TE/download.html#Updated
   - deterministic 的方法，由于系统的不稳定性和对初始条件的敏感性，逆向预测是和求解基本是不可能的
   - surrogate model 的方法，通过构建一个系统的在隐空间的近似模型，然后对这个模型进行逆向求解，以及对真实系统的控制
   - diffusion based + Probabilistic + generative model 的方法，通过对系统的随机性和不确定性的建模，以及对系统的生成模型的建模，来进行逆向预测与控制—— 我们并不需要精确地刻画“风暴”的每一个细节，并溯源到蝴蝶，而是将target system - 无数场可能的风暴 - 无数个蝴蝶的关系，建模为一个概率分布，然后通过对这个概率分布的逆向推断，来进行逆向预测与控制
+
+  - update: 
+  - 在相空间里的传统建模 （PSR）似乎并不很高效，延迟坐标法的设计有点傻，不如transfomer, 特别是用于时间序列+混沌系统的一些工作，但是一些指标可以参考，比如 Lyaponuv Exponent，基于不变量、operator learning 的一些工作可能参考价值更大 
+  - 相关文章：
+    - https://arxiv.org/pdf/2402.11463
+    - https://arxiv.org/pdf/2408.05177 （没啥特别的，只是说明two-phase training 的思路对于多尺度系统模型有帮助，这也是一种新范式下的数据同化）
+    - chatgpt log: https://chatgpt.com/share/67009de3-7524-800c-b0df-c7c8dfe2b347
+    - https://zr9558.com/wp-content/uploads/2015/09/time-series-prediction-by-chaotic-modeling-of-nonlinear-dynamical-systems.pdf
+
