@@ -1,0 +1,8 @@
+{
+	"nodes":[
+		{"id":"f5a30c7efbf32772","x":-180,"y":-220,"width":200,"height":60,"type":"text","text":"### DEMO for MarS"},
+		{"id":"acc5963ed49f9248","x":-460,"y":-100,"width":365,"height":250,"type":"text","text":"##### Mirror historical events \n- wrap an LLM-agent outside to build a pipeline \n- input: text-based events/news\n- process: order/ order-batch level message  "},
+		{"id":"cc7589165b8f3490","x":-60,"y":-98,"width":325,"height":248,"type":"text","text":"##### Interactive \"trading game\"\n- Given pre-trade historical data () \n- let user to make choices on:  "}
+	],
+	"edges":[]
+}

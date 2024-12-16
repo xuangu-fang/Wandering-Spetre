@@ -1,0 +1,15 @@
+{
+	"nodes":[
+		{"id":"cc7589165b8f3490","type":"text","text":"##### Interactive \"trading game\"\n- Given pre-trade historical data \n- let user to make choice\n- set a goal: \"saver\"? \"speculators\"?","x":-140,"y":-98,"width":405,"height":138},
+		{"id":"dc64ec40b9373a32","x":320,"y":134,"width":250,"height":60,"type":"text","text":"- several LLM/RL-agents as competors"},
+		{"id":"0aad49a13a33c76d","type":"text","text":"- show the prob-curve of the future","x":40,"y":134,"width":250,"height":60},
+		{"id":"2da97a045b3ac3e1","type":"text","text":"- config of agents/strag.","x":-230,"y":134,"width":250,"height":60},
+		{"id":"acc5963ed49f9248","type":"text","text":"##### Mirror historical events \n- wrap an LLM-agent outside to build a pipeline \n- input: text-based events/news\n- process:  order-batch level message (totally generated)  \n- news-event encoded\n- multi-assets simu? ","x":-660,"y":-98,"width":365,"height":292},
+		{"id":"f5a30c7efbf32772","type":"text","text":"### DEMO for MarS","x":-305,"y":-200,"width":185,"height":60}
+	],
+	"edges":[
+		{"id":"e59e0bb3e6729bed","fromNode":"cc7589165b8f3490","fromSide":"bottom","toNode":"0aad49a13a33c76d","toSide":"top"},
+		{"id":"d29b97370f0f406b","fromNode":"cc7589165b8f3490","fromSide":"bottom","toNode":"dc64ec40b9373a32","toSide":"top"},
+		{"id":"bb19218aff2f54cb","fromNode":"cc7589165b8f3490","fromSide":"bottom","toNode":"2da97a045b3ac3e1","toSide":"top"}
+	]
+}

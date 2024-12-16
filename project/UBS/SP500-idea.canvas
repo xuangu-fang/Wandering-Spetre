@@ -1,0 +1,18 @@
+{
+	"nodes":[
+		{"id":"44db32cfb394e513","type":"text","text":"# S&P 500 Ideas","x":-180,"y":-240,"width":220,"height":50},
+		{"id":"52d7a7760a9431bc","type":"text","text":"#### Current diagram\n- Predict the daily return for each stock\n- Choose stocks with top-K predicted return\n- Optimize weights with risk/vol control \n\n#### Tricks may help:\n- fusion of multi-source info\n- feature selection \n- cluster & hieratical optimize","x":-300,"y":-80,"width":460,"height":280},
+		{"id":"ad98984ca2234a3e","type":"text","text":"### new directions\n- ##### Multi-task predict\n- ##### Cross-assets latent structure\n- ##### Risk-aware signal fusion ","x":-300,"y":280,"width":460,"height":223},
+		{"id":"c4ecc85bb7d875ba","type":"text","text":"##### Multi-task predict\n- ###### why? \n\t- inherent correlation of tasks \n\t- support more freedom for down-streaming optimize \n- ###### how?\n\t- return, vol, sharpe ratio..? \n\t- multi-step predict (5 days, 10 days... many TS work use the trick) ","x":-880,"y":580,"width":440,"height":340},
+		{"id":"0b03a3f37e213077","type":"text","text":"##### Risk-aware signal fusion\n- ###### why? \n\t- Ensemble always helps \n\t- Fusion with uncertainty helps risk-control (max-dropdown)?    \n- ###### how?\n\t- Gaussian message merging? \n\t- Mean-variance model / Black-Litterman / Bayes filtering...","x":240,"y":580,"width":440,"height":340},
+		{"id":"9d5842e2ce18532e","type":"text","text":"##### Cross-assets latent structure\n- ###### why? \n\t- inspired from pairs trade... inherent correlation counts \n\t- Coarse-grained feature is more robust? \n- ###### how?\n\t- dynamical clustering by seq. feature?  \n\t- low-rank analysis over temporal corr-mat.? \n\t- utilize during signal merging / weight optimize? \n\n - ### pair-wise may be crucial\n\t - correlation of indexes indicate different states of market","x":-290,"y":640,"width":440,"height":460},
+		{"id":"0eb2c9adaa485a73","x":220,"y":1000,"width":460,"height":160,"type":"text","text":"- ###### Foundation model ? \n- ###### Generative / Diffusion model ?\n- ###### Start with Q-lib + try something new!"}
+	],
+	"edges":[
+		{"id":"865d18b6096983ce","fromNode":"44db32cfb394e513","fromSide":"bottom","toNode":"52d7a7760a9431bc","toSide":"top"},
+		{"id":"c449a548dd7acf77","fromNode":"52d7a7760a9431bc","fromSide":"bottom","toNode":"ad98984ca2234a3e","toSide":"top","label":"What's new? "},
+		{"id":"5341110c849c101c","fromNode":"ad98984ca2234a3e","fromSide":"bottom","toNode":"9d5842e2ce18532e","toSide":"top"},
+		{"id":"d261544e3e450c10","fromNode":"ad98984ca2234a3e","fromSide":"bottom","toNode":"c4ecc85bb7d875ba","toSide":"top"},
+		{"id":"b0b66fbfaa81a74d","fromNode":"ad98984ca2234a3e","fromSide":"bottom","toNode":"0b03a3f37e213077","toSide":"top"}
+	]
+}
