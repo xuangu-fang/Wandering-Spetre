@@ -1,0 +1,347 @@
+{
+  "nodes": [
+    {
+      "id": "7d77e8b7190decd7",
+      "type": "group",
+      "styleAttributes": {},
+      "x": -260,
+      "y": 0,
+      "width": 570,
+      "height": 400,
+      "color": "2",
+      "label": "What's inside of edge"
+    },
+    {
+      "id": "4f03e10a3a814d83",
+      "type": "group",
+      "styleAttributes": {},
+      "x": 120,
+      "y": 480,
+      "width": 580,
+      "height": 360,
+      "color": "6",
+      "label": "How to read/use? "
+    },
+    {
+      "id": "7ea4fd63611cacdf",
+      "type": "group",
+      "styleAttributes": {},
+      "x": -580,
+      "y": 480,
+      "width": 540,
+      "height": 360,
+      "color": "5",
+      "label": "How to write?"
+    },
+    {
+      "id": "8c093fc7e8ff5726",
+      "type": "group",
+      "styleAttributes": {},
+      "x": 160,
+      "y": -400,
+      "width": 280,
+      "height": 200,
+      "color": "2",
+      "label": "Method-Tag2"
+    },
+    {
+      "id": "3615145d18ce52d4",
+      "type": "group",
+      "styleAttributes": {},
+      "x": 20,
+      "y": -500,
+      "width": 280,
+      "height": 200,
+      "color": "2",
+      "label": "Method-Tag1"
+    },
+    {
+      "id": "1578da05339a02d3",
+      "type": "group",
+      "styleAttributes": {},
+      "x": -640,
+      "y": -500,
+      "width": 260,
+      "height": 200,
+      "color": "1",
+      "label": "Scen-Tag2"
+    },
+    {
+      "id": "bdadae0f8d184654",
+      "type": "group",
+      "styleAttributes": {},
+      "x": -510,
+      "y": -620,
+      "width": 250,
+      "height": 200,
+      "color": "1",
+      "label": "Scen-Tag1"
+    },
+    {
+      "id": "055007d9cbf0ecc4",
+      "type": "text",
+      "text": "# Hypergraph based handbook",
+      "styleAttributes": {
+        "textAlign": "center"
+      },
+      "x": -305,
+      "y": -800,
+      "width": 500,
+      "height": 100
+    },
+    {
+      "id": "83d2863e1b2ea864",
+      "type": "text",
+      "text": "Scen1 ",
+      "styleAttributes": {
+        "textAlign": "center",
+        "shape": "pill"
+      },
+      "x": -450,
+      "y": -600,
+      "width": 100,
+      "height": 60,
+      "color": "5"
+    },
+    {
+      "id": "5f2593ae4d73ab15",
+      "type": "text",
+      "text": "Method3",
+      "styleAttributes": {
+        "textAlign": "center",
+        "shape": "pill"
+      },
+      "x": 330,
+      "y": -280,
+      "width": 100,
+      "height": 60,
+      "color": "5"
+    },
+    {
+      "id": "52a67917b6161175",
+      "type": "text",
+      "text": "### Regular Edge \n- Optimal Performance, implement, hyper-parameter... (tuple?)\n- logging of investigation\n",
+      "styleAttributes": {
+        "border": null,
+        "textAlign": "center"
+      },
+      "x": -210,
+      "y": 20,
+      "width": 455,
+      "height": 180
+    },
+    {
+      "id": "b00f797099b0cede",
+      "type": "text",
+      "text": "Scen2 ",
+      "styleAttributes": {
+        "textAlign": "center",
+        "shape": "pill"
+      },
+      "x": -500,
+      "y": -480,
+      "width": 100,
+      "height": 60,
+      "color": "5"
+    },
+    {
+      "id": "7c90efd14ae0f272",
+      "type": "text",
+      "text": "Scen3",
+      "styleAttributes": {
+        "textAlign": "center",
+        "shape": "pill"
+      },
+      "x": -600,
+      "y": -370,
+      "width": 100,
+      "height": 60,
+      "color": "5"
+    },
+    {
+      "id": "f6d353a53aa731a4",
+      "type": "text",
+      "text": "### Hyper Edge \n- Deep analysis (text)\n- Benchmark table?\n- code-base template?",
+      "styleAttributes": {
+        "border": null,
+        "textAlign": "center"
+      },
+      "x": -210,
+      "y": 220,
+      "width": 455,
+      "height": 140
+    },
+    {
+      "id": "1cb26f3473f9d185",
+      "type": "text",
+      "text": "Method1",
+      "styleAttributes": {
+        "textAlign": "center",
+        "shape": "pill"
+      },
+      "x": 40,
+      "y": -480,
+      "width": 100,
+      "height": 60,
+      "color": "5"
+    },
+    {
+      "id": "36fa4fa9e4ece12c",
+      "type": "text",
+      "text": "Method2",
+      "styleAttributes": {
+        "textAlign": "center",
+        "shape": "pill"
+      },
+      "x": 195,
+      "y": -370,
+      "width": 100,
+      "height": 60,
+      "color": "5"
+    },
+    {
+      "id": "d0bf724e869469cb",
+      "type": "text",
+      "text": "### Regular-level link prediction\n- **Top-down** principal\n- Always refer related **Hyper edges** first \n",
+      "styleAttributes": {
+        "border": null,
+        "textAlign": "center"
+      },
+      "x": 180,
+      "y": 510,
+      "width": 420,
+      "height": 130
+    },
+    {
+      "id": "b13963dc92a59f13",
+      "type": "text",
+      "text": "### Hyper-level link prediction\n- **Down-top** principals\n- Summarize **Regular-edge** ->  **Hyper-edges** \n",
+      "styleAttributes": {
+        "border": null,
+        "textAlign": "center"
+      },
+      "x": 180,
+      "y": 660,
+      "width": 420,
+      "height": 140
+    },
+    {
+      "id": "3929618ef1696b05",
+      "type": "text",
+      "text": "### Edge Editors\n- **Regular Edge**: added by **Data Scientist** \n- **Hyper Edge**: added by **Applied Scientist** \n",
+      "styleAttributes": {
+        "border": null,
+        "textAlign": "center"
+      },
+      "x": -530,
+      "y": 520,
+      "width": 420,
+      "height": 120
+    },
+    {
+      "id": "4a173838514f4a6d",
+      "type": "text",
+      "text": "### Node Editors\n- **Regular Node**: Human /**Applied Scientist** \n- **Hyper Node** (Tag) : added by **Applied Scientist** \n",
+      "styleAttributes": {
+        "border": null,
+        "textAlign": "center"
+      },
+      "x": -530,
+      "y": 660,
+      "width": 420,
+      "height": 140
+    },
+    {
+      "id": "f9467be4617a52ef",
+      "type": "file",
+      "file": "project/RD-agent/Pasted image 20241218155041.png",
+      "styleAttributes": {},
+      "x": -179,
+      "y": -2280,
+      "width": 930,
+      "height": 573
+    },
+    {
+      "id": "ad646f8c0ba5e5bd",
+      "type": "file",
+      "file": "project/RD-agent/Pasted image 20241219102831.png",
+      "styleAttributes": {},
+      "x": -680,
+      "y": -1560,
+      "width": 1085,
+      "height": 645
+    },
+    {
+      "id": "e81fc6d624001ff8",
+      "type": "file",
+      "file": "project/RD-agent/Pasted image 20241218154011.png",
+      "styleAttributes": {},
+      "x": -1400,
+      "y": -2251,
+      "width": 1051,
+      "height": 516
+    }
+  ],
+  "edges": [
+    {
+      "id": "66c085cc723aca3d",
+      "styleAttributes": {
+        "arrow": "circle-outline",
+        "pathfindingMethod": "a-star",
+        "path": "dotted"
+      },
+      "fromNode": "bdadae0f8d184654",
+      "fromSide": "right",
+      "toNode": "3615145d18ce52d4",
+      "toSide": "left",
+      "fromEnd": "arrow",
+      "color": "6"
+    },
+    {
+      "id": "179ed9ceb8783c87",
+      "styleAttributes": {},
+      "fromNode": "83d2863e1b2ea864",
+      "fromSide": "right",
+      "toNode": "1cb26f3473f9d185",
+      "toSide": "left",
+      "fromEnd": "arrow",
+      "color": "5"
+    },
+    {
+      "id": "63231fe4d17a5c44",
+      "styleAttributes": {},
+      "fromNode": "7c90efd14ae0f272",
+      "fromSide": "right",
+      "toNode": "5f2593ae4d73ab15",
+      "toSide": "left",
+      "fromEnd": "arrow",
+      "color": "5",
+      "label": "regular-edge"
+    },
+    {
+      "id": "e9009e6192f062b9",
+      "styleAttributes": {},
+      "fromNode": "7c90efd14ae0f272",
+      "fromSide": "right",
+      "toNode": "36fa4fa9e4ece12c",
+      "toSide": "left",
+      "fromEnd": "arrow",
+      "color": "5"
+    },
+    {
+      "id": "0c80fe9037ba8939",
+      "styleAttributes": {
+        "path": "dotted",
+        "arrow": "circle-outline"
+      },
+      "fromNode": "1578da05339a02d3",
+      "fromSide": "bottom",
+      "toNode": "8c093fc7e8ff5726",
+      "toSide": "bottom",
+      "fromEnd": "arrow",
+      "color": "6",
+      "label": "hyper-edge"
+    }
+  ],
+  "metadata": {}
+}

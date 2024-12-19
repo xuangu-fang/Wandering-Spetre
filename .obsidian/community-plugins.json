@@ -1,5 +1,8 @@
 [
   "obsidian-git",
   "dataview",
-  "table-editor-obsidian"
+  "table-editor-obsidian",
+  "advanced-canvas",
+  "colored-text",
+  "obsidian-excalidraw-plugin"
 ]
